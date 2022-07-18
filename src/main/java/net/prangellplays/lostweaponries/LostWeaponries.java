@@ -1,6 +1,7 @@
 package net.prangellplays.lostweaponries;
 
 import net.fabricmc.api.ModInitializer;
+import net.prangellplays.lostweaponries.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -10,6 +11,8 @@ public class LostWeaponries implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+
+		ModItems.registerModItems();
 		
 	}
 }
