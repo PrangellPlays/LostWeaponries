@@ -8,7 +8,6 @@ import net.minecraft.util.registry.Registry;
 import net.prangellplays.lostweaponries.LostWeaponries;
 
 public class ModItems {
-
     public static final Item DUCK_BLADE = registerItem("duck_blade",
             new Item(new FabricItemSettings().group(ItemGroup.MISC)));
 
@@ -18,6 +17,6 @@ public class ModItems {
     }
 
     public static void registerModItems() {
-        LostWeaponries.LOGGER.debug("Registering Mod Items for" + LostWeaponries.MOD_ID);
+        LostWeaponries.LOGGER.info("Registering Mod Items for" + LostWeaponries.MOD_ID);
     }
 }
