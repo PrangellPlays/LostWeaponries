@@ -9,7 +9,7 @@ import net.prangellplays.lostweaponries.LostWeaponries;
 
 public class ModItems {
     public static final Item DUCK_BLADE = registerItem("duck_blade",
-            new Item(new FabricItemSettings().group(ItemGroup.MISC)));
+            new Item(new FabricItemSettings().group(ModItemGroup.LostWeaponries.setNoScrollbar())));
 
 
     private static Item registerItem(String name, Item item) {

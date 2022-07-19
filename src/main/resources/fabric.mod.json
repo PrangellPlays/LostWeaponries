@@ -4,17 +4,17 @@
   "version": "${version}",
 
   "name": "Lost Weaponries",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "description": "The Lost Weaponries Mod",
   "authors": [
     "PrangellPlays"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "N/A",
+    "sources": "N/A"
   },
 
   "license": "MIT License",
-  "icon": "assets/lostweapons/icon.png",
+  "icon": "assets/lostweaponries/icon.png",
 
   "environment": "*",
   "entrypoints": {

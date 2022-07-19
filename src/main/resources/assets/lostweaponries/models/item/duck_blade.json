@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "lostweaponry:item/duck_blade"
+    "layer0": "lostweaponries:item/duck_blade"
   }
 }
