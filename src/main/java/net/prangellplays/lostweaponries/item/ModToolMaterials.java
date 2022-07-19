@@ -10,7 +10,7 @@ import net.minecraft.util.Lazy;
 import java.util.function.Supplier;
 
 public enum ModToolMaterials implements ToolMaterial {
-    Duck(5, 2031, 10.0F, 4.0F, 15, () -> {
+    Duck(5, -1, 10.0F, 1.0F, 15, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{ModItems.DUCK_INGOT});
     });
 
