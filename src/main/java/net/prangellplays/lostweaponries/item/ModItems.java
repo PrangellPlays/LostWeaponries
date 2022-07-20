@@ -3,10 +3,12 @@ package net.prangellplays.lostweaponries.item;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.SwordItem;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.prangellplays.lostweaponries.LostWeaponries;
+import net.prangellplays.lostweaponries.entity.ModEntities;
 
 public class ModItems {
     public static final Item DUCK_BLADE = registerItem("duck_blade",
@@ -14,6 +16,10 @@ public class ModItems {
 
     public static final Item DUCK_INGOT = registerItem("duck_ingot",
             new Item(new FabricItemSettings().group(ModItemGroup.LostWeaponries.setNoScrollbar())));
+
+    public static final Item DUCK_SPAWN_EGG = registerItem("duck_spawn_egg",
+            new SpawnEggItem(ModEntities.DUCK, 0xE6BC0C, 0xE6960C,
+                    new FabricItemSettings().group(ModItemGroup.LostWeaponries.setNoScrollbar())));
 
 
     private static Item registerItem(String name, Item item) {
