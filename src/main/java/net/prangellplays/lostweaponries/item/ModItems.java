@@ -17,6 +17,9 @@ public class ModItems {
     public static final Item DUCK_INGOT = registerItem("duck_ingot",
             new Item(new FabricItemSettings().group(ModItemGroup.LostWeaponries.setNoScrollbar())));
 
+    public static final Item SPEED_CHARM = registerItem("speed_charm",
+            new Item(new FabricItemSettings().group(ModItemGroup.LostWeaponries.setNoScrollbar())));
+
     public static final Item DUCK_SPAWN_EGG = registerItem("duck_spawn_egg",
             new SpawnEggItem(ModEntities.DUCK, 0xE6BC0C, 0xE6960C,
                     new FabricItemSettings().group(ModItemGroup.LostWeaponries.setNoScrollbar())));
