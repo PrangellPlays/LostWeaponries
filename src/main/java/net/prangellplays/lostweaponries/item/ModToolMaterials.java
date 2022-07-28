@@ -1,19 +1,15 @@
 package net.prangellplays.lostweaponries.item;
 
 import net.minecraft.item.ItemConvertible;
-import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
-import net.minecraft.tag.ItemTags;
 import net.minecraft.util.Lazy;
-
 import java.util.function.Supplier;
 
 public enum ModToolMaterials implements ToolMaterial {
-    Duck(5, -1, 10.0F, 1.0F, 15, () -> {
+    EVERYTHING(5, -1, 10.0F, 15.0F, 15, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{ModItems.DUCK_INGOT});
     });
-
         private final int miningLevel;
         private final int itemDurability;
         private final float miningSpeed;

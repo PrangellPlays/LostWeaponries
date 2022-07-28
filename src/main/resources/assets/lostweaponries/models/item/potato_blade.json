@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "lostweaponries:item/speed_charm"
+    "layer0": "lostweaponries:item/potato_blade"
   }
 }

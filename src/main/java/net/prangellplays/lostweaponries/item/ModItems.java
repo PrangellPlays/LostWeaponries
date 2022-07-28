@@ -2,7 +2,6 @@ package net.prangellplays.lostweaponries.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.SwordItem;
 import net.minecraft.util.Identifier;
@@ -12,13 +11,19 @@ import net.prangellplays.lostweaponries.entity.ModEntities;
 
 public class ModItems {
     public static final Item DUCK_BLADE = registerItem("duck_blade",
-            new SwordItem(ModToolMaterials.Duck, 1, 2f, new FabricItemSettings().group(ModItemGroup.LostWeaponries.setNoScrollbar())));
+            new SwordItem(ModToolMaterials.EVERYTHING, 1, 2f, new FabricItemSettings().group(ModItemGroup.LostWeaponries.setNoScrollbar())));
+
+    public static final Item POTATO_BLADE = registerItem("potato_blade",
+            new SwordItem(ModToolMaterials.EVERYTHING, 1, 2f, new FabricItemSettings().group(ModItemGroup.LostWeaponries.setNoScrollbar())));
 
     public static final Item DUCK_INGOT = registerItem("duck_ingot",
             new Item(new FabricItemSettings().group(ModItemGroup.LostWeaponries.setNoScrollbar())));
 
-    public static final Item SPEED_CHARM = registerItem("speed_charm",
+    public static final Item POTATO_INGOT = registerItem("potato_ingot",
             new Item(new FabricItemSettings().group(ModItemGroup.LostWeaponries.setNoScrollbar())));
+
+    public static final Item POTATO_KNISHES = registerItem("potato_knishes",
+        new Item(new FabricItemSettings().group(ModItemGroup.LostWeaponries.setNoScrollbar()).food(ModFoodComponents.POTATO_KNISHES)));
 
     public static final Item DUCK_SPAWN_EGG = registerItem("duck_spawn_egg",
             new SpawnEggItem(ModEntities.DUCK, 0xE6BC0C, 0xE6960C,
