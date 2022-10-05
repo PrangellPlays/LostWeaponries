@@ -1,10 +1,20 @@
 {
   "item.lostweaponries.duck_blade": "Duck Blade",
-  "item.lostweaponries.duck_ingot": "Duck Ingot",
-  "item.lostweaponries.duck_spawn_egg": "Duck Spawn Egg",
-  "item.lostweaponries.potato_knishes": "Potato Knishes",
   "item.lostweaponries.potato_blade": "Potato Blade",
+  "item.lostweaponries.assasin_dagger": "Assasins Dagger",
+  "item.lostweaponries.sculk_horn": "Sculk Horn",
+
+  "item.lostweaponries.duck_ingot": "Duck Ingot",
   "item.lostweaponries.potato_ingot": "Potato Ingot",
+  "item.lostweaponries.all_the_ingot": "All The Ingot",
+
+  "item.lostweaponries.duck_spawn_egg": "Duck Spawn Egg",
+
+  "item.lostweaponries.potato_knishes": "Potato Knishes",
+
+  "item.lostweaponries.corrupt_book": "Corrupt Book",
+
+  "effect.lostweaponries.frostburn": "Frostburn",
 
   "itemGroup.lostweaponries.lostweaponries": "Lost Weaponries"
 }

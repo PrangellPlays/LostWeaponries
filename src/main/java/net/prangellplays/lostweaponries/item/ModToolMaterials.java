@@ -8,7 +8,7 @@ import java.util.function.Supplier;
 
 public enum ModToolMaterials implements ToolMaterial {
     EVERYTHING(5, -1, 10.0F, 15.0F, 15, () -> {
-        return Ingredient.ofItems(new ItemConvertible[]{ModItems.DUCK_INGOT});
+        return Ingredient.ofItems(new ItemConvertible[]{ModItems.ALL_THE_INGOT});
     });
         private final int miningLevel;
         private final int itemDurability;

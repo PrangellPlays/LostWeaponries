@@ -11,7 +11,7 @@ import software.bernie.geckolib3.model.provider.data.EntityModelData;
 public class DuckModel extends AnimatedGeoModel<DuckEntity> {
     @Override
     public Identifier getModelResource(DuckEntity object) {
-        return new Identifier(LostWeaponries.MOD_ID, "geo/model.geo.json");
+        return new Identifier(LostWeaponries.MOD_ID, "geo/duck.geo.json");
     }
 
     @Override
@@ -21,7 +21,7 @@ public class DuckModel extends AnimatedGeoModel<DuckEntity> {
 
     @Override
     public Identifier getAnimationResource(DuckEntity animatable) {
-        return new Identifier(LostWeaponries.MOD_ID, "animations/model.animation.json");
+        return new Identifier(LostWeaponries.MOD_ID, "animations/duck.animation.json");
     }
 
     @SuppressWarnings({ "unchecked", "rawtypes" })

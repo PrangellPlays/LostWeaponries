@@ -3,6 +3,7 @@ package net.prangellplays.lostweaponries.entity.custom;
 import jdk.jfr.Percentage;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.EntityType;
+import net.minecraft.entity.Tameable;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttribute;
@@ -10,6 +11,7 @@ import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.passive.AnimalEntity;
 import net.minecraft.entity.passive.PassiveEntity;
+import net.minecraft.entity.passive.TameableEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundEvent;
@@ -25,11 +27,11 @@ import software.bernie.geckolib3.core.event.predicate.AnimationEvent;
 import software.bernie.geckolib3.core.manager.AnimationData;
 import software.bernie.geckolib3.core.manager.AnimationFactory;
 
-public class DuckEntity extends AnimalEntity implements IAnimatable {
+public class DuckEntity extends TameableEntity implements IAnimatable {
     private AnimationFactory factory = new AnimationFactory(this);
 
     public DuckEntity(EntityType<? extends AnimalEntity> entityType, World world) {
-        super(entityType, world);
+        super((EntityType<? extends TameableEntity>) entityType, world);
     }
 
     @Nullable
@@ -56,7 +58,7 @@ public class DuckEntity extends AnimalEntity implements IAnimatable {
 
     private <E extends IAnimatable> PlayState predicate(AnimationEvent<E> event) {
         if (event.isMoving()) {
-            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.model.walk", true));
+            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.duck.walk", true));
             return PlayState.CONTINUE;
         }
         return null;
