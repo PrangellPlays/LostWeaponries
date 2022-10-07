@@ -9,8 +9,8 @@ import net.minecraft.util.registry.Registry;
 import net.prangellplays.lostweaponries.LostWeaponries;
 import net.prangellplays.lostweaponries.entity.ModEntities;
 import net.prangellplays.lostweaponries.item.custom.AssasinDagger;
+import net.prangellplays.lostweaponries.item.custom.FrostfireBlade;
 import net.prangellplays.lostweaponries.item.custom.PotatoBlade;
-import net.prangellplays.lostweaponries.item.custom.SculkHorn;
 
 public class ModItems {
     public static final Item DUCK_BLADE = registerItem("duck_blade",
@@ -21,6 +21,9 @@ public class ModItems {
 
     public static final Item ASSASIN_DAGGER = registerItem("assasin_dagger",
             new AssasinDagger(ModToolMaterials.EVERYTHING, -6, 5f, new FabricItemSettings().group(ModItemGroup.LostWeaponries.setNoScrollbar())));
+
+    public static final Item FROSTFIRE_BLADE = registerItem("frostfire_blade",
+            new FrostfireBlade(ModToolMaterials.EVERYTHING, -2, -3f, new FabricItemSettings().group(ModItemGroup.LostWeaponries.setNoScrollbar())));
 
     public static final Item DUCK_INGOT = registerItem("duck_ingot",
             new Item(new FabricItemSettings().group(ModItemGroup.LostWeaponries.setNoScrollbar())));
@@ -33,9 +36,6 @@ public class ModItems {
 
     public static final Item CORRUPT_BOOK = registerItem("corrupt_book",
             new Item(new FabricItemSettings().group(ModItemGroup.LostWeaponries.setNoScrollbar())));
-
-    public static final Item SCULK_HORN = registerItem("sculk_horn",
-            new SculkHorn(new FabricItemSettings().group(ModItemGroup.LostWeaponries.setNoScrollbar())));
 
     public static final Item POTATO_KNISHES = registerItem("potato_knishes",
         new Item(new FabricItemSettings().group(ModItemGroup.LostWeaponries.setNoScrollbar()).food(ModFoodComponents.POTATO_KNISHES)));

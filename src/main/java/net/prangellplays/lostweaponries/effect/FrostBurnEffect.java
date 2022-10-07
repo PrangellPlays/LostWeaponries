@@ -18,7 +18,8 @@ public class FrostBurnEffect extends StatusEffect {
             double x = pLivingEntity.getX();
             double y = pLivingEntity.getY();
             double z = pLivingEntity.getZ();
-            pLivingEntity.damage(DamageSource.DRAGON_BREATH, 0.2f);
+            pLivingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, 5, 255));
+            pLivingEntity.damage(DamageSource.DRAGON_BREATH, 0.7f);
             pLivingEntity.teleport(x, y, z);
             pLivingEntity.setVelocity(0, 0, 0);
         }
