@@ -22,7 +22,6 @@
       "net.prangellplays.lostweaponries.LostWeaponries"
     ],
     "client": [
-      "net.prangellplays.lostweaponries.LostWeaponriesClient"
     ]
   },
   "mixins": [

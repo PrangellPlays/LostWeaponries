@@ -7,9 +7,10 @@ import net.minecraft.util.Lazy;
 import java.util.function.Supplier;
 
 public enum ModToolMaterials implements ToolMaterial {
-    EVERYTHING(5, -1, 10.0F, 15.0F, 15, () -> {
-        return Ingredient.ofItems(new ItemConvertible[]{ModItems.ALL_THE_INGOT});
-    });
+    Plasmythic(5, -1, 10.0F, 15.0F, 15, () -> Ingredient.ofItems(new ItemConvertible[]{ModItems.PLASMYTHIC_CRYSTAL})),
+    Potato(5, -1, 10.0F, 15.0F, 15, () -> Ingredient.ofItems(new ItemConvertible[]{ModItems.POTATO_INGOT})),
+    Frostfire(5, -1, 10.0F, 15.0F, 15, () -> Ingredient.ofItems(new ItemConvertible[]{ModItems.FROSTFIRE_INGOT})),
+    Assasinite(5, -1, 10.0F, 15.0F, 15, () -> Ingredient.ofItems(new ItemConvertible[]{ModItems.ASSASINITE_INGOT}));
         private final int miningLevel;
         private final int itemDurability;
         private final float miningSpeed;

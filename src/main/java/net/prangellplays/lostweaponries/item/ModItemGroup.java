@@ -7,7 +7,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 
 public class ModItemGroup {
-    public static final ItemGroup LostWeaponries = FabricItemGroupBuilder.build(new Identifier(net.prangellplays.lostweaponries.LostWeaponries.MOD_ID,  "lostweaponries"), () -> new ItemStack(ModItems.DUCK_BLADE));
+    public static final ItemGroup LostWeaponries = FabricItemGroupBuilder.build(new Identifier(net.prangellplays.lostweaponries.LostWeaponries.MOD_ID,  "lostweaponries"), () -> new ItemStack(ModItems.CORRUPT_BOOK));
 
 
 }
